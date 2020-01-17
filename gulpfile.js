@@ -38,6 +38,10 @@ var paths = {
     images: {
         src: 'src/img/**',
         dest: 'build/img/'
+    },
+    icons: {
+        src: 'src/web-fonts-with-css/**/*',
+        dest: 'build/web-fonts-with-css/'
     }
 };
 
@@ -79,6 +83,11 @@ function libs () {
         .pipe(gulp.dest(paths.libs.dest))
 }
 
+function icons () {
+    return gulp.src(paths.icons.src)
+        .pipe(gulp.dest(paths.icons.dest))
+}
+
 function imgCompress () {
     return gulp.src(paths.images.src)
         .pipe(imagemin({
@@ -110,5 +119,5 @@ gulp.task('scripts', scripts);
 gulp.task('imgCompress', imgCompress);
 gulp.task('watch', watch);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, imgCompress, libs)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, imgCompress, libs, icons)));
 gulp.task('dev', gulp.series(clean, gulp.parallel('build', 'watch')));

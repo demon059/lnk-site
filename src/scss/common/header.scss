@@ -18,7 +18,62 @@
 
     &__tagline {
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
         margin-left: 30px;
+    }
+
+    &__contacts {
+        display: flex;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            & + & {
+                margin-left: 40px;
+            }
+
+            i {
+                height: 27px;
+                width: 27px;
+                border-radius: 100%;
+                background-color: $blue-400;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+            }
+
+            a {
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+
+    &__search {
+        margin-top: 10px;
+        display: flex;
+
+        input {
+            border: 0;
+            border-bottom: 1px solid #efefef;
+            flex: 1 auto;
+            outline: none;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+        }
+
+        button {
+            border: 0;
+            background: none;
+            padding-right: 0;
+            outline: none;
+
+            i {
+                font-size: 18px;
+                color: $blue-400;
+            }
+        }
     }
 }
