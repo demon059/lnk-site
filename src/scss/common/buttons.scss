@@ -1,0 +1,16 @@
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 15px;
+    width: 250px;
+
+    &-border-white {
+        color: white;
+        border: 1px solid;
+
+        &:hover {
+            color: white;
+            border: 1px solid;
+        }
+    }
+}

@@ -2,7 +2,13 @@
 @import 'helpers';
 @import 'base';
 
-
-// sections
+// common components
 @import 'common/header';
+@import 'common/footer';
+@import 'common/navigation';
+@import 'common/buttons';
+@import 'common/flipbox';
+
+// views
+@import 'views/main';
 
