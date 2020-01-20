@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ЛНК</title>
+
+    <!-- Fonts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="build/web-fonts-with-css/css/fontawesome-all.min.css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/main.css">
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [58.00900517610983, 56.23311200621898],
+                    zoom: 17,
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search',
+                }),
+
+                myPlacemark = new ymaps.Placemark([58.009009530133106, 56.236012112473034], { // Создаем метку с такими координатами и суем в переменную
+                    hintContent: 'Режим работы:<br> Ежедневно 10:00–21:00',
+                    balloonContent: 'г.Пермь, ул.Куйбышева, 16, 3 этаж, справа от эскалатора'
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'http://komyaginprint.ru/assets/images/point.svg',
+                    iconImageSize: [78, 102],
+                    iconImageOffset: [-39, -102]
+                });
+
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        });
+    </script>
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header-container container">
+        <div class="page-header-wrap row align-items-center">
+            <div class="page-header__logo">
+                <img src="build/img/logo.png" alt="">
+            </div>
+            <div class="page-header__tagline">
+                НАИЛУЧШИЕ ДОСТУПНЫЕ<br>
+                ИНСТРУМЕНТЫ ГИДРОГЕОЛОГА
+            </div>
+        </div>
+        <div class="page-header-wrap">
+            <div class="page-header__actions">
+                <div class="page-header__contacts">
+                    <div class="page-header__contacts-item">
+                        <i class="far fa-envelope"></i> <a href="mailto:info@loggers.ru">info@loggers.ru</a>
+                    </div>
+                    <div class="page-header__contacts-item">
+                        <i class="fas fa-mobile-alt"></i> <a href="tel:+73422554494">+7 (342) 255-44-94</a>
+                    </div>
+                </div>
+                <div class="page-header__search">
+                    <input type="text" placeholder="Поиск по сайту">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span>
+                                Главная
+                            </span>
+                        </a>
+                    </li>
+                    <li class="submenu">
+                        <a href="">
+                            <span>
+                                Продукция
+                            </span>
+                        </a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Уровнемеры скважинные электроконтактные
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Регистраторы уровня и телеметрия
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="">
+                                    <span>
+                                        Биологическая очистка подземных вод
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Пьезометры
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Многоуровневые системы мониторинга
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Пробоотборники подземных вод
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        Гидропосты
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>
+                                Конфигуратор
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>
+                                Блог
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>
+                                Контакты
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-border-white">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<article class="page-content">
+    <section class="products">
+        <div class="container">
+            <div class="products-list">
+                <div class="products-item mini flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="products-item__name">
+                                Уравнеметры скважинные
+                                электроконтактный
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="products-item__text">
+                                Уравнеметры скважинные
+                                электроконтактный
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item mini flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="products-item__name">
+                                Регистраторы уровня и телеметрия
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="products-item__text">
+                                Регистраторы уровня и телеметрия
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item mini flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="products-item__name">
+                                Биологическая очистка подземных вод
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="products-item__text">
+                                Биологическая очистка подземных вод
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item mini flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="products-item__name">
+                                Гидропосты
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="products-item__text">
+                                Гидропосты
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item mini flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="products-item__name">
+                                Пробоотборники
+                                подземных вод
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="products-item__text">
+                                Пробоотборники
+                                подземных вод
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="page-footer__logo">
+                <img src="build/img/logo.png" alt="">
+            </div>
+            <div class="page-footer__contacts">
+                <div class="page-footer__contacts-phone">
+                    <a href="tel:+73422554494">+7 (342) 255-44-94</a>
+                </div>
+                <div class="page-footer__contacts-callback">
+                    <a href="#" class="dashed">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="page-footer-col">
+                <ul class="page-footer__nav">
+                    <li>
+                        <a href="">
+                            О компании
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Партнеры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Блог
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer-col">
+                <ul class="page-footer__nav">
+                    <li>
+                        <a href="">
+                            Продукция
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Уровнемеры скважинные электроконтактные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Регистраторы уровня и телеметрия
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Биологическая очистка подземных вод
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Пьезометры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Многоуровневые системы мониторинга
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Пробоотборники подземных вод
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Гидропосты
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer-col text-right">
+                <div class="page-footer__info">
+                    <p>
+                        info@loggers.ru
+                    </p>
+                    <p>
+                        Пермь, Революции 12, офис 41
+                    </p>
+                    <p>
+                        Пн-Пт: 7.00 - 16.00 МСК
+                    </p>
+                    <p>
+                        ИНН: 5904214284
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="page-footer-col">
+                <a href="" class="dashed">Политика конфиденциальности</a>
+            </div>
+            <div class="page-footer-col">
+                <ul class="page-footer__nav">
+                    <li>
+                        <a href="">
+                            Конфигуратор
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer-col text-right">
+                <div class="development">
+                    <p>
+                        Разработка сайта
+                    </p>
+                    <img src="build/img/Market_Mentor-1.png" width="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer-copy">
+        Лаборатория Неразрушающего Контроля © 2019
+    </div>
+</footer>
+
+<script src="build/js/libs/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"
+<script src="build/js/scripts/main.js"></script>
+</body>
+</html>
