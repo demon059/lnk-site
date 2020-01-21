@@ -16,35 +16,10 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/main.css">
-
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script>
-        ymaps.ready(function () {
-            var myMap = new ymaps.Map('map', {
-                    center: [58.00900517610983, 56.23311200621898],
-                    zoom: 17,
-                    controls: []
-                }, {
-                    searchControlProvider: 'yandex#search',
-                }),
-
-                myPlacemark = new ymaps.Placemark([58.009009530133106, 56.236012112473034], { // Создаем метку с такими координатами и суем в переменную
-                    hintContent: 'Режим работы:<br> Ежедневно 10:00–21:00',
-                    balloonContent: 'г.Пермь, ул.Куйбышева, 16, 3 этаж, справа от эскалатора'
-                }, {
-                    iconLayout: 'default#image',
-                    iconImageHref: 'http://komyaginprint.ru/assets/images/point.svg',
-                    iconImageSize: [78, 102],
-                    iconImageOffset: [-39, -102]
-                });
-
-            myMap.geoObjects.add(myPlacemark);
-            myMap.behaviors.disable('scrollZoom');
-        });
-    </script>
 </head>
 <body>
 <header class="page-header">
@@ -174,8 +149,37 @@
     </div>
 </header>
 <article class="page-content">
-    <section class="products">
+    <section class="breadcrumbs">
         <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Продукция
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Уравнеметры скважинные электроконтактные
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Уровнемер электроконтактный скважинный (лента) Solinst Модель 101
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="product-container">
+        <div class="container">
+            <h1 class="common-title-h3">
+                Уровнемер электроконтактный скважинный (лента) Solinst Модель 101
+            </h1>
             <div class="products-list">
                 <div class="products-item mini flip-box">
                     <div class="flip-box-inner">
@@ -250,6 +254,30 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="product-node-block mt-40 row">
+                <div class="product-slider-container col-lg-6 pl-0">
+                    <div class="product-slider">
+                        <div class="product-slider__item">
+                            <img src="build/img/prod.png" alt="">
+                        </div>
+                        <div class="product-slider__item">
+                            <img src="build/img/prod2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-desc col-lg-6 pr-0">
+                    <p>
+                        Применяется для точного измерения уровня воды в скважинах, пьезометрах, резервуарах и открытых водоемах (реках, озерах, водохранилищах).
+                    </p>
+                    <p>
+                        Уровнемер состоит в Госреестре СИ России.
+                        Уровнемер Госреестр
+                    </p>
+                    <p>
+                        Доставка во все регионы России и СНГ
+                    </p>
                 </div>
             </div>
         </div>
@@ -387,9 +415,16 @@
 </footer>
 
 <script src="build/js/libs/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.product-slider').bxSlider({
+            pager: false
+        });
+    });
+</script>
 <script src="build/js/scripts/main.js"></script>
 </body>
 </html>

@@ -68,6 +68,23 @@ a {
     }
 }
 
+.common-title-h3 {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 35px;
+
+    &:before {
+        content: '';
+        width: 28px;
+        height: 2px;
+        background-color: #0b71bb;
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
+}
+
 .common-title-h4 {
     font-size: 20px;
     font-weight: 700;

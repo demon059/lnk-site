@@ -1,0 +1,48 @@
+/* tovar
+   ========================================================================== */
+
+.product {
+    &-container {
+        background: url("../img/cage.png") center center;
+        background-repeat: repeat-y;
+    }
+
+    &-slider {
+        &__item {
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-desc {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 20px;
+    }
+}
+
+/* bx-slider custom
+   ========================================================================== */
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus, .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    background-position: 0;
+}
+
+.bx-wrapper .bx-next {
+    background: url(../img/long-arrow-alt-right-solid.svg) no-repeat;
+    opacity: .5;
+}
+
+.bx-wrapper .bx-prev {
+    background: url(../img/long-arrow-alt-left-solid.svg) no-repeat;
+    opacity: .5;
+}
+
+
