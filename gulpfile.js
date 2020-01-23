@@ -69,7 +69,7 @@ function scripts () {
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(concat('main.min.js'))
+        .pipe(concat('main.js'))
         .pipe(uglify({
             toplevel: true
         }))

@@ -1,0 +1,55 @@
+/* article
+   ========================================================================== */
+
+.download-container {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+
+        a {
+            font-size: 18px;
+            border-bottom: 1px dashed $gray-500;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        i {
+            font-size: 31px;
+            color: #0072bf;
+            margin-right: 10px;
+        }
+    }
+}
+
+.image-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    grid-gap: 30px;
+
+    &__item {
+        height: 200px;
+        position: relative;
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            height: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}

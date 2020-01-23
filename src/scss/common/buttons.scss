@@ -5,9 +5,10 @@
     width: 250px;
     height: 50px;
     outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    & + & {
+        margin-left: 10px;
+    }
 
     &-border-white {
         color: white;
@@ -18,6 +19,7 @@
             border: 1px solid;
         }
     }
+
     &-blue {
         background: linear-gradient(to right, $blue-500, $blue-400);
         color: white;
@@ -25,5 +27,10 @@
         &:hover {
             color: white;
         }
+    }
+
+    &-border-blue {
+        background: transparent;
+        border: 1px solid $blue-400;
     }
 }

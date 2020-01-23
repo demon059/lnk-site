@@ -1,0 +1,183 @@
+/* configurator
+   ========================================================================== */
+
+.configurator {
+    background: url("../img/cage.png") center center;
+    background-repeat: repeat-y;
+    padding-bottom: 100px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-form {
+        flex: 1;
+        display: flex;
+    }
+
+    &-select-items {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.04);
+        padding: 30px;
+        min-height: 400px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .common-title-h5 {
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 28px;
+                height: 2px;
+                background-color: #0b71bb;
+                position: absolute;
+                bottom: -5px;
+                left: calc(50% - 14px);
+            }
+        }
+
+        ol {
+            padding-left: 20px;
+
+            li + li {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        grid-gap: 30px;
+
+        &__item {
+            background: rgba(white, 0.7);
+            font-weight: 700;
+            color: $gray-500;
+            padding: 0 15px;
+            font-size: 14px;
+            width: 125px;
+            height: 50px;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.04);
+            cursor: default;
+            display: flex;
+
+            &.active {
+                display: flex;
+                color: initial;
+            }
+
+            &.blank {
+                display: none;
+            }
+        }
+
+        &__content {
+            font-family: 'Roboto', sans-serif;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            display: none;
+            font-size: 18px;
+
+            &.active {
+                display: flex;
+            }
+
+            &-actions {
+                margin-top: 40px;
+                margin-bottom: 30px;
+
+                .custom-control-label::before {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    background-color: transparent;
+                    border: 2px solid $blue-400;
+                }
+
+                .custom-radio .custom-control-input:checked~.custom-control-label::after {
+                    background-image: none;
+                    background-color: $blue-400;
+                    border-radius: 100%;
+                    margin: 4px;
+                    width: 12px;
+                    height: 12px;
+                }
+
+                .custom-control {
+                    margin-bottom: 15px;
+                }
+
+                .custom-control-label {
+                    padding-left: 5px;
+                    padding-top: 1px;
+                    cursor: pointer;
+                }
+
+                .custom-control-label::before {
+                    border: 2px solid $gray-500;
+                }
+
+                .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+                    background-image: none;
+                    left: -16px;
+                    top: 8px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $blue-400;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+
+                .grid-btns {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+                    grid-gap: 30px;
+
+                    .btn {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+
+                table {
+                    background-color: white;
+                    border-radius: 5px;
+
+                    th {
+                        font-family: 'Exo 2', sans-serif;
+                    }
+
+                    td, th {
+                        padding: 10px;
+                        border: 1px solid $gray-100;
+                        font-size: 18px;
+
+                        .custom-control-label::before {
+                            left: -20px;
+                        }
+
+                        .custom-control-label::after {
+                            left: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

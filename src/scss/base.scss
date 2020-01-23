@@ -51,6 +51,10 @@ a {
     margin-left: 0;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .common-title-h2 {
     font-size: 36px;
     font-weight: 700;
@@ -145,11 +149,43 @@ a {
 }
 
 .content {
+    font-size: 18px;
     p {
-        font-size: 18px;
         line-height: 24px;
     }
+
+    ul, ol {
+        padding-left: 20px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.04);
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
+.image-float {
+    width: 260px;
+    height: 260px;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
 
 .dashed {
     border-bottom: 1px dashed;
