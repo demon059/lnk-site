@@ -253,25 +253,25 @@
             <div class="configurator-container row mt-40">
                 <div class="configurator-content col-lg-8 pl-0">
                     <div class="configurator-steps">
-                        <div class="configurator-steps__item">
+                        <div class="configurator-steps__item active" data-step-number="1">
                             Шаг 1
                         </div>
-                        <div class="configurator-steps__item active">
+                        <div class="configurator-steps__item blank" data-step-number="2">
                             Шаг 2
                         </div>
-                        <div class="configurator-steps__item blank">
+                        <div class="configurator-steps__item blank" data-step-number="3">
                             Шаг 3
                         </div>
-                        <div class="configurator-steps__item blank">
+                        <div class="configurator-steps__item blank" data-step-number="4">
                             Шаг 4
                         </div>
-                        <div class="configurator-steps__item blank">
+                        <div class="configurator-steps__item blank" data-step-number="5">
                             Шаг 5
                         </div>
                     </div>
                     <form action="" class="configurator-form">
-                        <div class="configurator-steps__content">
-                            <div class="configurator-steps__content-actions">
+                        <div>
+                            <div class="configurator-steps__content active" data-step-number="1">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="i1" name="c1" class="custom-control-input">
                                     <label class="custom-control-label" for="i1">Подземные воды (скважина)</label>
@@ -282,12 +282,7 @@
                                         река, море и т.п.)</label>
                                 </div>
                             </div>
-                            <button class="btn btn-blue">
-                                следующий шаг
-                            </button>
-                        </div>
-                        <div class="configurator-steps__content">
-                            <div class="configurator-steps__content-actions">
+                            <div class="configurator-steps__content" data-step-number="2">
                                 <table>
                                     <thead>
                                     <tr>
@@ -438,17 +433,7 @@
                                     </thead>
                                 </table>
                             </div>
-                            <div class="row">
-                                <button class="btn btn-border-blue">
-                                    предыдущий шаг
-                                </button>
-                                <button class="btn btn-blue">
-                                    следующий шаг
-                                </button>
-                            </div>
-                        </div>
-                        <div class="configurator-steps__content">
-                            <div class="configurator-steps__content-actions">
+                            <div class="configurator-steps__content" data-step-number="3">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="i14" name="c3" class="custom-control-input">
                                     <label class="custom-control-label" for="i14">На кевларовый шнур, трос, с
@@ -462,17 +447,7 @@
                                         без извлечения регистратора</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <button class="btn btn-border-blue">
-                                    предыдущий шаг
-                                </button>
-                                <button class="btn btn-blue">
-                                    следующий шаг
-                                </button>
-                            </div>
-                        </div>
-                        <div class="configurator-steps__content ">
-                            <div class="configurator-steps__content-actions">
+                            <div class="configurator-steps__content" data-step-number="4">
                                 <p class="bold">
                                     На кевларовый шнур, трос, с периодическим извлечением регистратора
                                     на дневную поверхность для считывания данных.
@@ -499,17 +474,7 @@
                                         полученных данных</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <button class="btn btn-border-blue">
-                                    предыдущий шаг
-                                </button>
-                                <button class="btn btn-blue">
-                                    следующий шаг
-                                </button>
-                            </div>
-                        </div>
-                        <div class="configurator-steps__content active">
-                            <div class="configurator-steps__content-actions">
+                            <div class="configurator-steps__content" data-step-number="5">
                                 <p class="bold">
                                     Поздравляем, Вы успешно собрали систему автономного мониторинга!
                                 </p>
@@ -527,11 +492,14 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <button class="btn btn-border-blue">
-                                    предыдущий шаг
-                                </button>
-                            </div>
+                        </div>
+                        <div class="configurator-steps__nav">
+                            <button class="btn btn-border-blue btn-prev">
+                                предыдущий шаг
+                            </button>
+                            <button class="btn btn-blue btn-next">
+                                следующий шаг
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -703,6 +671,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<script src="build/js/scripts/main.js"></script>
+<script src="build/js/scripts/scripts.js"></script>
 </body>
 </html>

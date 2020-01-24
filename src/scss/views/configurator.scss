@@ -14,6 +14,8 @@
     &-form {
         flex: 1;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &-select-items {
@@ -21,7 +23,7 @@
         border-radius: 5px;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.04);
         padding: 30px;
-        min-height: 400px;
+        min-height: 540px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -71,6 +73,7 @@
             display: flex;
 
             &.active {
+                background: rgba(white, 1);
                 display: flex;
                 color: initial;
             }
@@ -83,100 +86,99 @@
         &__content {
             font-family: 'Roboto', sans-serif;
             flex-direction: column;
-            justify-content: space-between;
-            flex: 1;
             display: none;
             font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 30px;
 
             &.active {
                 display: flex;
             }
 
-            &-actions {
-                margin-top: 40px;
-                margin-bottom: 30px;
+            .custom-control-label::before {
+                width: 20px;
+                height: 20px;
+            }
 
-                .custom-control-label::before {
-                    width: 20px;
-                    height: 20px;
+            .custom-control-input:checked ~ .custom-control-label::before {
+                background-color: transparent;
+                border: 2px solid $blue-400;
+            }
+
+            .custom-radio .custom-control-input:checked~.custom-control-label::after {
+                background-image: none;
+                background-color: $blue-400;
+                border-radius: 100%;
+                margin: 4px;
+                width: 12px;
+                height: 12px;
+            }
+
+            .custom-control {
+                margin-bottom: 15px;
+            }
+
+            .custom-control-label {
+                padding-left: 5px;
+                padding-top: 1px;
+                cursor: pointer;
+            }
+
+            .custom-control-label::before {
+                border: 2px solid $gray-500;
+            }
+
+            .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+                background-image: none;
+                left: -16px;
+                top: 8px;
+                width: 5px;
+                height: 10px;
+                border: solid $blue-400;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .grid-btns {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+                grid-gap: 30px;
+
+                .btn {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            table {
+                background-color: white;
+                border-radius: 5px;
+
+                th {
+                    font-family: 'Exo 2', sans-serif;
                 }
 
-                .custom-control-input:checked ~ .custom-control-label::before {
-                    background-color: transparent;
-                    border: 2px solid $blue-400;
-                }
+                td, th {
+                    padding: 10px;
+                    border: 1px solid $gray-100;
+                    font-size: 18px;
 
-                .custom-radio .custom-control-input:checked~.custom-control-label::after {
-                    background-image: none;
-                    background-color: $blue-400;
-                    border-radius: 100%;
-                    margin: 4px;
-                    width: 12px;
-                    height: 12px;
-                }
-
-                .custom-control {
-                    margin-bottom: 15px;
-                }
-
-                .custom-control-label {
-                    padding-left: 5px;
-                    padding-top: 1px;
-                    cursor: pointer;
-                }
-
-                .custom-control-label::before {
-                    border: 2px solid $gray-500;
-                }
-
-                .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-                    background-image: none;
-                    left: -16px;
-                    top: 8px;
-                    width: 5px;
-                    height: 10px;
-                    border: solid $blue-400;
-                    border-width: 0 3px 3px 0;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
-
-                .grid-btns {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-                    grid-gap: 30px;
-
-                    .btn {
-                        width: 100%;
-                        margin-left: 0;
+                    .custom-control-label::before {
+                        left: -20px;
                     }
-                }
 
-                table {
-                    background-color: white;
-                    border-radius: 5px;
-
-                    th {
-                        font-family: 'Exo 2', sans-serif;
-                    }
-
-                    td, th {
-                        padding: 10px;
-                        border: 1px solid $gray-100;
-                        font-size: 18px;
-
-                        .custom-control-label::before {
-                            left: -20px;
-                        }
-
-                        .custom-control-label::after {
-                            left: -20px;
-                        }
+                    .custom-control-label::after {
+                        left: -20px;
                     }
                 }
             }
         }
+    }
+
+    .btn-prev {
+        display: none;
     }
 }
 

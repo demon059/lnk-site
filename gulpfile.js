@@ -65,15 +65,6 @@ function styles () {
 
 function scripts () {
     return gulp.src(paths.scripts.src)
-        .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(concat('main.js'))
-        .pipe(uglify({
-            toplevel: true
-        }))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(browserSync.stream());
 }
