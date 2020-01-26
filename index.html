@@ -18,7 +18,13 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/js/libs/tags-cloud/jqcloud.min.css">
     <link rel="stylesheet" href="build/css/main.css">
+
+    <!-- Map scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="build/js/libs/map/raphael-min.js"></script>
+    <script type="text/javascript" src="build/js/libs/map/russian-map.js"></script>
 </head>
 <body>
 <header class="page-header">
@@ -388,6 +394,14 @@
             <h2 class="common-title-h2">
                 География поставок
             </h2>
+            <div class="geo-deliveries text-center" id="russian-map">
+                <div class="point-region" id="krasnoyarsk">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="point-region__popup">
+                        Город: Красноярск
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="partners">
@@ -395,6 +409,17 @@
             <h2 class="common-title-h2">
                 Партнеры
             </h2>
+            <div class="partners-cloud" id="partners">
+                <div class="partners-popup">
+                    <p>
+                        Заказ оборудования: <span id="partnerEquipment"></span>
+                    </p>
+                    <p>
+                        Год: <span id="partnerYear"></span>
+                    </p>
+                    <i class="close fas fa-times"></i>
+                </div>
+            </div>
         </div>
     </section>
     <section class="about">
@@ -597,6 +622,7 @@
 <script src="build/js/libs/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="build/js/libs/tags-cloud/jqcloud.min.js"></script>
 <script src="build/js/scripts/scripts.js"></script>
 </body>
 </html>
