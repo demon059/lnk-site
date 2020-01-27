@@ -1,0 +1,14 @@
+/* blog
+   ========================================================================== */
+
+.blog {
+    &-container {
+        padding-bottom: 100px;
+
+        @media (max-width: 991px) {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+

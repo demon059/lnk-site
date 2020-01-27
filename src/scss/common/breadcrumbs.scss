@@ -1,6 +1,10 @@
 .breadcrumbs {
     padding: 40px 0;
 
+    @media (max-width: 991px) {
+        padding: 30px 0;
+    }
+
     ul {
         list-style: none;
         padding: 0;
@@ -8,11 +12,20 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 991px) {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
         li {
             a {
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 color: $gray-500;
+
+                @media (max-width: 991px) {
+                    font-size: 12px;
+                }
             }
         }
 
