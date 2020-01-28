@@ -25,6 +25,9 @@
 <header class="page-header">
     <div class="page-header-container container">
         <div class="page-header-wrap row align-items-center">
+            <div class="page-header__logo mobile">
+                <img src="build/img/logo-white.png" alt="">
+            </div>
             <div class="page-header__logo">
                 <img src="build/img/logo.png" alt="">
             </div>
@@ -47,12 +50,26 @@
                     <input type="text" placeholder="Поиск по сайту">
                     <button><i class="fas fa-search"></i></button>
                 </div>
+                <div class="page-header__menu-bar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
     </div>
     <div class="navigation">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
+            <div class="navigation__close"></div>
+            <div class="navigation__contacts">
+                <div class="page-header__contacts-item">
+                    <i class="far fa-envelope"></i> <a href="mailto:info@loggers.ru">info@loggers.ru</a>
+                </div>
+                <div class="page-header__contacts-item">
+                    <i class="fas fa-mobile-alt"></i> <a href="tel:+73422554494">+7 (342) 255-44-94</a>
+                </div>
+            </div>
+            <div class="navigation-row">
                 <ul>
                     <li>
                         <a href="">
@@ -62,11 +79,9 @@
                         </a>
                     </li>
                     <li class="submenu">
-                        <a href="">
-                            <span>
-                                Продукция
-                            </span>
-                        </a>
+                        <span>
+                            Продукция
+                        </span>
                         <ul class="dropdown">
                             <li>
                                 <a href="">
@@ -144,6 +159,10 @@
                 <button class="btn btn-border-white">
                     Заказать звонок
                 </button>
+            </div>
+            <div class="navigation__search">
+                <input type="text" placeholder="Поиск по сайту">
+                <button><i class="fas fa-search"></i></button>
             </div>
         </div>
     </div>
@@ -314,20 +333,824 @@
                         </p>
                     </div>
                     <div class="tab-pane fade" id="tab-coast" role="tabpanel" aria-labelledby="coast">
-                        Et et2 consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                        <div class="coast-container">
+                            <div class="coast-row row first">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="tab-spec" role="tabpanel" aria-labelledby="spec">
-                        Et et3 consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                        <div class="spec-container">
+                            <div class="spec-row row first">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="spec-title">
+                                        Характеристика
+                                    </div>
+                                </div>
+                                <div class="col-lg-6-6 pr-0">
+                                    <div class="spec-title">
+                                        Показатель
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Диапазон измерения:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Лента:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-md-6 pl-0 dotted">
+                                    <p>
+                                        Технология маркировки ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Технология маркировки ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Разрывная нагрузка ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Рабочая температура:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Рабочая температура катушки с электродвигателем:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Гарантийный срок:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul class="mt-20">
+                                <div class="spec-title mb-10">
+                                    Комплектация:
+                                </div>
+                                <li>
+                                    Уровнемер 101 Зонд P7
+                                </li>
+                                <li>
+                                    Устройство направляющее
+                                </li>
+                                <li>
+                                    Элемент питания 9В (Крона)
+                                </li>
+                                <li>
+                                    Руководство по эксплуатации (паспорт)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="tab-options" role="tabpanel" aria-labelledby="options">
-                        Et et4 consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                        <div class="options-list">
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-instr" role="tabpanel" aria-labelledby="options">
-                        Et et5 consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    <div class="tab-pane fade" id="tab-instr" role="tabpanel" aria-labelledby="instr">
+                        <div class="download-container">
+                            <ul>
+                                <li>
+                                    <i class="far fa-file-word"></i><a href="">Скачать документ</a>
+                                </li>
+                                <li>
+                                    <i class="far fa-file-archive"></i><a href="">Скачать документ</a>
+                                </li>
+                                <li>
+                                    <i class="far fa-file-pdf"></i><a href="">Скачать документ</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center mt-40">
+            <div class="tabs-mobile">
+                <div class="tabs-mobile__item">
+                    <div class="tabs-mobile__item-title">
+                        Описание
+                    </div>
+                    <div class="tabs-mobile__item-content">
+                        <p>
+                            Уровнемер электроконтактный скважинный (датчик уровня) Solinst Модель 101 является отраслевым стандартом
+                            для портативных ручных измерителей. Он надежен, прост в использовании и измеряет с точностью до миллиметра.
+                            Модель 101 P7 измерителя уровня воды рассчитана на давление на зонд до 34,5 Бар и имеет лазерную маркировку PVDF ленты.
+                        </p>
+                        <p>
+                            Принцип работы датчика уровня:
+                            Модель 101 оснащена коррозионностойким датчиком из нержавеющей стали, имеет надежную маркировку плоской ленты, установлена на сбалансированную катушку. Она рассчитана на питание от стандартной батареи 9 вольт (типа «Крона»).
+                        </p>
+                        <p>
+                            Датчик имеет диэлектрический зазор между электродами. Когда происходит контакт с водой, цепь замыкается, активируя громкий звуковой и световой сигнал. Уровень воды в этом случае определяется путем снятия показаний
+                            с ленты в верхней части (скважины или Вашей реперной точки).
+                        </p>
+                        <p>
+                            Регулятор чувствительности позволяет при необходимости отключить зуммер, а также обеспечивает четкий сигнал
+                            в воде, как с высокой, так и низкой проводимостью.
+                        </p>
+                        <p>
+                            Так же рекомендуем обратить Ваше внимание на автоматический регистратор (электронный самописец) уровня воды <a href="">Модель 3001 Levelogger Edge</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-mobile__item">
+                    <div class="tabs-mobile__item-title">
+                        Цена
+                    </div>
+                    <div class="tabs-mobile__item-content">
+                        <div class="coast-container">
+                            <div class="coast-row row first">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="coast-row row">
+                                <div class="col-md-7 pl-0">
+                                    <div class="coast-title">
+                                        Наименование
+                                    </div>
+                                    <p>
+                                        Наименование Наименование Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="coast-title">
+                                        Полная шкала
+                                    </div>
+                                    <p>
+                                        Наименование
+                                    </p>
+                                </div>
+                                <div class="col-md-2 pr-0 text-right">
+                                    <div class="coast-title">
+                                        Цена
+                                    </div>
+                                    <p>
+                                        100 000 <i class="fas fa-ruble-sign"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-mobile__item">
+                    <div class="tabs-mobile__item-title">
+                        Характеристики
+
+                    </div>
+                    <div class="tabs-mobile__item-content">
+                        <div class="spec-container">
+                            <div class="spec-row row first">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="spec-title">
+                                        Характеристика
+                                    </div>
+                                </div>
+                                <div class="col-lg-6-6 pr-0">
+                                    <div class="spec-title">
+                                        Показатель
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Диапазон измерения:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Лента:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-md-6 pl-0 dotted">
+                                    <p>
+                                        Технология маркировки ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Технология маркировки ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Разрывная нагрузка ленты:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Рабочая температура:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Рабочая температура катушки с электродвигателем:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spec-row row">
+                                <div class="col-lg-6 pl-0 dotted">
+                                    <p>
+                                        Гарантийный срок:
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <p>
+                                        0….1500 м
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul class="mt-20">
+                                <div class="spec-title mb-10">
+                                    Комплектация:
+                                </div>
+                                <li>
+                                    Уровнемер 101 Зонд P7
+                                </li>
+                                <li>
+                                    Устройство направляющее
+                                </li>
+                                <li>
+                                    Элемент питания 9В (Крона)
+                                </li>
+                                <li>
+                                    Руководство по эксплуатации (паспорт)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-mobile__item">
+                    <div class="tabs-mobile__item-title">
+                        Опции
+                    </div>
+                    <div class="tabs-mobile__item-content">
+                        <div class="options-list">
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item__image">
+                                    <img src="build/img/prod.png" alt="">
+                                </div>
+                                <div class="options-item__name">
+                                    <a href="">
+                                        Уровнемер электроконтактный
+                                        скважинный (лента) Solinst
+                                        Модель 101
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-mobile__item">
+                    <div class="tabs-mobile__item-title">
+                        Инструкции
+                    </div>
+                    <div class="tabs-mobile__item-content">
+                        <div class="download-container">
+                            <ul>
+                                <li>
+                                    <i class="far fa-file-word"></i><a href="">Скачать документ</a>
+                                </li>
+                                <li>
+                                    <i class="far fa-file-archive"></i><a href="">Скачать документ</a>
+                                </li>
+                                <li>
+                                    <i class="far fa-file-pdf"></i><a href="">Скачать документ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-hidden row justify-content-center mt-40">
                 <button class="btn btn-blue">
                     Конфигуратор
                 </button>
@@ -338,10 +1161,10 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row align-items-center justify-content-between">
-            <div class="page-footer__logo">
+            <div class="page-footer__logo col-6 pl-0">
                 <img src="build/img/logo.png" alt="">
             </div>
-            <div class="page-footer__contacts">
+            <div class="page-footer__contacts col-6 text-right pr-0">
                 <div class="page-footer__contacts-phone">
                     <a href="tel:+73422554494">+7 (342) 255-44-94</a>
                 </div>
@@ -350,7 +1173,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-30">
+        <div class="page-footer__row-menu row mt-30">
             <div class="page-footer-col">
                 <ul class="page-footer__nav">
                     <li>
@@ -439,10 +1262,10 @@
             </div>
         </div>
         <div class="row align-items-end">
-            <div class="page-footer-col">
+            <div class="page-footer-col policy">
                 <a href="" class="dashed">Политика конфиденциальности</a>
             </div>
-            <div class="page-footer-col">
+            <div class="page-footer-col mobile-hidden">
                 <ul class="page-footer__nav">
                     <li>
                         <a href="">

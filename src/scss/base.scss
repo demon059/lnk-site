@@ -9,6 +9,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
     overflow-x: hidden;
+
+    @media (max-width: 767px) {
+        padding-top: 77px;
+    }
 }
 
 a {
@@ -83,6 +87,10 @@ a {
     @media (max-width: 767px) {
         font-size: 24px;
     }
+
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
 }
 
 .common-title-h3 {
@@ -117,6 +125,10 @@ a {
     @media (max-width: 767px) {
         font-size: 16px;
     }
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
 }
 
 .common-title-h5 {
@@ -129,6 +141,10 @@ a {
     font-size: 18px;
     padding-left: 35px;
     width: 70%;
+
+    @media (max-width: 767px) {
+        font-size: 13px;
+    }
 }
 
 .common-text {
@@ -171,10 +187,19 @@ a {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
 
 .content {
     font-size: 18px;
+
+    @media (max-width: 767px) {
+        font-size: 13px;
+    }
+
     p {
         line-height: 24px;
     }
@@ -226,5 +251,48 @@ a {
     p {
         font-size: 14px;
         margin: 0;
+    }
+}
+
+.download-container {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+
+        a {
+            font-size: 18px;
+            border-bottom: 1px dashed $gray-500;
+            font-family: 'Roboto', sans-serif;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+
+        i {
+            font-size: 31px;
+            color: #0072bf;
+            margin-right: 10px;
+
+            @media (max-width: 767px) {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.mobile-hidden {
+    @media (max-width: 767px) {
+        display: none;
     }
 }

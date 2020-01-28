@@ -17,6 +17,10 @@
 
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
+
+    @media (max-width: 991px) {
+        transform: none;
+    }
 }
 
 .flip-box-front, .flip-box-back {

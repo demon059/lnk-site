@@ -1,35 +1,6 @@
 /* article
    ========================================================================== */
 
-.download-container {
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            display: flex;
-            align-items: center;
-        }
-
-        li + li {
-            margin-top: 10px;
-        }
-
-        a {
-            font-size: 18px;
-            border-bottom: 1px dashed $gray-500;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        i {
-            font-size: 31px;
-            color: #0072bf;
-            margin-right: 10px;
-        }
-    }
-}
-
 .image-list {
     margin-top: 40px;
     display: grid;

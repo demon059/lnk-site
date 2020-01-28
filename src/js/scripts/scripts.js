@@ -1,6 +1,18 @@
 $(document).ready(function () {
-    var currentStep = $('.configurator-steps__content.active').data('step-number');
+    // меню --------------------------------------------------
+    $('.page-header__menu-bar').click(function () {
+        $('.navigation').addClass('active');
+    })
+    $('.navigation__close').click(function () {
+        $('.navigation').removeClass('active');
+    })
+    $('.submenu').click(function () {
+        $(this).toggleClass('active');
+    })
+    // --- //
 
+    // конфигуратор --------------------------------------------------
+    var currentStep = $('.configurator-steps__content.active').data('step-number');
     $('.btn-next').click(function () {
         var nextStep = currentStep + 1;
         var lastStep = $('.configurator-steps__content').last().data('step-number');
@@ -89,9 +101,9 @@ $(document).ready(function () {
         });
 
     })
+    // --- //
 
-
-    // карта поставок на главной
+    // карта поставок на главной --------------------------------------------------
     fetch('build/js/libs/map/with-regions.json').then(function (response) {
         response.json().then(function (data) {
             new RussianMap({
@@ -123,9 +135,9 @@ $(document).ready(function () {
             }, data.regions);
         });
     });
+    // --- //
 
-    // партнеры
-
+    // партнеры --------------------------------------------------
     var words = [
         {
             text: "Компания", weight: 13, handlers: {
@@ -220,5 +232,11 @@ $(document).ready(function () {
     $('.partners-popup .close').click(function () {
         $('.partners-popup').hide();
     })
+    // --- //
 
+    // tabs-mobile --------------------------------------------------
+    $('.tabs-mobile__item-title').click(function () {
+        $(this).parent().toggleClass('active')
+    })
+    // --- //
 })

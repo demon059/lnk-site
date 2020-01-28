@@ -2,6 +2,10 @@
     background-color: $gray-100;
     padding-top: 60px;
 
+    @media (max-width: 991px) {
+        padding-top: 40px;
+    }
+
     &__logo {
         max-width: 165px;
 
@@ -16,20 +20,42 @@
                 font-size: 24px;
                 color: $blue-400;
                 font-weight: 700;
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
             }
         }
 
         &-callback {
             text-align: right;
             font-size: 18px;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
         }
     }
 
     &-col:nth-child(1), &-col:nth-child(3) {
         width: 25%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
     &-col:nth-child(2) {
         width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &-col +  &-col{
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
     }
 
     &__info {
@@ -39,6 +65,10 @@
         }
         p + p {
             margin-top: 10px;
+
+            @media (max-width: 767px) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -73,8 +103,17 @@
 
         li + li {
             margin-top: 20px;
+
+            @media (max-width: 767px) {
+                margin-top: 10px;
+            }
         }
     }
+
+    &__row-menu {
+        flex-direction: column;
+    }
+
     &-copy {
         background-color: $gray-500;
         text-align: center;
@@ -82,5 +121,20 @@
         color: white;
         margin-top: 50px;
         padding: 15px 0;
+
+        @media (max-width: 991px) {
+            margin-top: 40px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+
+    .policy {
+        @media (max-width: 767px) {
+            text-align: right;
+            margin-top: 10px;
+        }
     }
 }
