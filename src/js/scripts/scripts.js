@@ -7,9 +7,14 @@ $(document).ready(function () {
         $('.navigation').removeClass('active');
     })
     $('.submenu').click(function () {
-        $(this).toggleClass('active');
+        $(this).toggleClass('show');
     })
     // --- //
+
+    // контент --------------------------------------------------
+    $('.expand-label').click(function () {
+        $(this).toggleClass('active');
+    })
 
     // конфигуратор --------------------------------------------------
     var currentStep = $('.configurator-steps__content.active').data('step-number');
@@ -102,132 +107,6 @@ $(document).ready(function () {
 
     })
     // --- //
-
-    // карта поставок на главной --------------------------------------------------
-    fetch('build/js/libs/map/with-regions.json').then(function (response) {
-        response.json().then(function (data) {
-            new RussianMap({
-                viewPort: data.viewPort,
-                mapId: 'russian-map',
-                width: 862,
-                height: 497,
-                // дефолтовые атрибуты для контуров регионов
-                defaultAttr: {
-                    fill: '#25669e', // цвет которым закрашивать
-                    stroke: '#ffffff', // цвет границы
-                    'stroke-width': 1, // ширина границы
-                    'stroke-linejoin': 'round' // скруглять углы
-                },
-
-                // hover
-                mouseMoveAttr: {
-                    fill: '#25669e'
-                }
-                // onMouseMove: function (event) {
-                //     console.log('mouse on ' + this.region.name + ' (ident: ' + this.region.ident + ')');
-                // },
-                // onMouseOut: function (event) {
-                //     console.log('out on ' + this.region.name + ' (ident: ' + this.region.ident + ')');
-                // },
-                // onMouseClick: function (event) {
-                //     console.log('clicked on ' + this.region.name);
-                // }
-            }, data.regions);
-        });
-    });
-    // --- //
-
-    // партнеры --------------------------------------------------
-    var words = [
-        {
-            text: "Компания", weight: 13, handlers: {
-                click: function () {
-                    var equipment = 'Название'
-                    var year = '2008'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания2", weight: 10, handlers: {
-                click: function () {
-                    var equipment = 'Название1'
-                    var year = '2002'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания3", weight: 8, handlers: {
-                click: function () {
-                    var equipment = 'Название3'
-                    var year = '2004'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания4", weight: 7.3, handlers: {
-                click: function () {
-                    var equipment = 'Название4'
-                    var year = '2002'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания5", weight: 8.5, handlers: {
-                click: function () {
-                    var equipment = 'Название5'
-                    var year = '2005'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания6", weight: 6.2, handlers: {
-                click: function () {
-                    var equipment = 'Название6'
-                    var year = '2005'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-        {
-            text: "Компания7", weight: 5, handlers: {
-                click: function () {
-                    var equipment = 'Название7'
-                    var year = '2001'
-
-                    $('.partners-popup').show();
-                    $('#partnerEquipment').text(equipment);
-                    $('#partnerYear').text(year);
-                }
-            }
-        },
-    ];
-
-    $('#partners').jQCloud(words, {
-        autoResize: true
-    });
 
     $('.partners-popup .close').click(function () {
         $('.partners-popup').hide();

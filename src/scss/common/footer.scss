@@ -111,7 +111,10 @@
     }
 
     &__row-menu {
-        flex-direction: column;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
     }
 
     &-copy {

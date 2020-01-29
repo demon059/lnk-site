@@ -155,6 +155,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
         grid-gap: 30px;
+
+        @media (max-width: 1170px) {
+            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+        }
     }
 
     &-item {

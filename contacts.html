@@ -24,16 +24,16 @@
     <script>
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
-                    center: [58.00900517610983, 56.23311200621898],
-                    zoom: 17,
+                    center: [58.0054865665793,56.268960499999906],
+                    zoom: 16,
                     controls: []
                 }, {
                     searchControlProvider: 'yandex#search',
                 }),
 
-                myPlacemark = new ymaps.Placemark([58.009009530133106, 56.236012112473034], { // Создаем метку с такими координатами и суем в переменную
+                myPlacemark = new ymaps.Placemark([58.0054865665793,56.268960499999906], { // Создаем метку с такими координатами и суем в переменную
                     hintContent: 'Режим работы:<br> Ежедневно 10:00–21:00',
-                    balloonContent: 'г.Пермь, ул.Куйбышева, 16, 3 этаж, справа от эскалатора'
+                    balloonContent: '614007, Пермь, Революции 12, офис 41, +7 (342) 255-44-94'
                 }, {
                     iconLayout: 'default#image',
                     iconImageHref: 'http://komyaginprint.ru/assets/images/point.svg',
@@ -43,6 +43,7 @@
 
             myMap.geoObjects.add(myPlacemark);
             myMap.behaviors.disable('scrollZoom');
+            myMap.behaviors.disable('drag');
         });
     </script>
 </head>

@@ -93,12 +93,21 @@
             &.submenu {
                 position: relative;
 
+                &:hover {
+                    .dropdown {
+                        @media (min-width: 768px) {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
                 span {
                     color: #fff;
                     cursor: pointer;
                 }
 
-                &.active {
+                &.show {
                     &:after {
                         @media (max-width: 767px) {
                             transform: rotate(-90deg);
@@ -195,14 +204,6 @@
 
                     li + li {
                         margin-top: 10px;
-                    }
-                }
-
-                &:hover {
-                    .dropdown {
-                        @media (min-width: 991px) {
-                            display: block;
-                        }
                     }
                 }
             }

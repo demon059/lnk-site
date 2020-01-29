@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="build/js/libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="build/js/libs/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="build/js/libs/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="build/css/main.css">
 </head>
 <body>
@@ -321,7 +323,7 @@
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                 </p>
             </div>
-            <div class="image-list">
+            <div class="image-list owl-carousel">
                 <div class="image-list__item" href="https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
                     <img class="" src="https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
                 </div>
@@ -490,6 +492,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="build/js/libs/magnific-popup/jquery.magnific-popup.js"></script>
+<script src="build/js/libs/owlcarousel/owl.carousel.min.js"></script>
 <script src="build/js/scripts/scripts.js"></script>
 <script>
     $(document).ready(function () {
@@ -497,6 +500,26 @@
             delegate: '.image-list__item',
             type: 'image',
             closeOnContentClick: true
+        });
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
         });
     })
 </script>
