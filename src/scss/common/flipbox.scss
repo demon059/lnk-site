@@ -15,7 +15,7 @@
     border-radius: 5px;
 }
 
-.flip-box:hover .flip-box-inner {
+.flip-box:hover .flip-box-inner, .flip-box.active .flip-box-inner{
     transform: rotateY(180deg);
 
     @media (max-width: 991px) {

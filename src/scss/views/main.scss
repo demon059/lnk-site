@@ -9,7 +9,7 @@
         margin-bottom: 40px;
     }
 
-    &-list {
+    &-list, &-category-list {
         margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
@@ -18,15 +18,11 @@
         @media (max-width: 1170px) {
             grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
         }
+    }
 
+    &-category-list {
         @media (max-width: 991px) {
             display: none;
-        }
-
-        &.main-products {
-            @media (max-width: 991px) {
-                display: grid;
-            }
         }
     }
 
