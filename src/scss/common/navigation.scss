@@ -184,6 +184,14 @@
                                 top: 10px;
                                 left: 0;
                             }
+
+                            a {
+                                span {
+                                    &:hover {
+                                        border: none;
+                                    }
+                                }
+                            }
                         }
 
                         a {
