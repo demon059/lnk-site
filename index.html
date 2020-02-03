@@ -777,9 +777,23 @@ $(document).ready(function () {
             }
         },
     ];
-    $('#partners').jQCloud(words, {
-        autoResize: true
+
+    var $element = $('.partners');
+    let counter = 0;
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop() + $(window).height();
+        var offset = $element.offset().top
+
+        if (scroll > offset && counter == 0) {
+            $('#partners').jQCloud(words, {
+                autoResize: true,
+                delay: 200
+            });
+        }
     });
+
+
     // --- //
 })
 </script>
