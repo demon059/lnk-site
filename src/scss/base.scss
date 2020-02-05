@@ -291,6 +291,12 @@ a {
     }
 }
 
+.tablet-hidden {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
 .mobile-hidden {
     @media (max-width: 767px) {
         display: none;
