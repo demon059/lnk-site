@@ -2,6 +2,11 @@
     padding-top: 12px;
     border-top: 3px solid $blue-500;
     background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 
     @media (max-width: 767px) {
         border-top: 0;
@@ -103,7 +108,9 @@
             border-bottom: 1px solid #efefef;
             flex: 1 auto;
             outline: none;
-            text-align: center;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
             font-family: 'Roboto', sans-serif;
             font-style: italic;
         }

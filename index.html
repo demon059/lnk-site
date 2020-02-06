@@ -83,29 +83,38 @@
                             </span>
                         </a>
                     </li>
-                    <li class="submenu">
+                    <li class="submenu show">
                         <span>
                             Продукция
                         </span>
                         <ul class="dropdown">
                             <li>
                                 <a href="">
-                                    <span>
+                                    <span class="mobile-hidden">
                                         Уровнемеры скважинные электроконтактные
+                                    </span>
+                                    <span class="mobile-visible">
+                                        Уровнемеры скважинные
                                     </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <span>
+                                     <span class="mobile-hidden">
                                         Регистраторы уровня и телеметрия
+                                    </span>
+                                    <span class="mobile-visible">
+                                        Регистраторы и телеметрия
                                     </span>
                                 </a>
                             </li>
                             <li class="active">
                                 <a href="">
-                                    <span>
+                                    <span class="mobile-hidden">
                                         Биологическая очистка подземных вод
+                                    </span>
+                                    <span class="mobile-visible">
+                                        Биоочистка подземных вод
                                     </span>
                                 </a>
                             </li>
@@ -187,7 +196,7 @@
                                 <img src="build/img/prod.png" alt="">
                             </div>
                             <div class="products-item__name">
-                                Уравнеметры скважинные
+                                Уровнемеры скважинные
                                 электроконтактный
                             </div>
                         </div>
@@ -417,7 +426,7 @@
                 <div class="point-region" id="krasnoyarsk">
                     <i class="fas fa-map-marker-alt"></i>
                     <div class="point-region__popup">
-                        Город: Красноярск
+                        Красноярск
                     </div>
                 </div>
             </div>
@@ -431,10 +440,10 @@
             <div class="partners-cloud" id="partners">
                 <div class="partners-popup">
                     <p>
-                        Заказ оборудования: <span id="partnerEquipment"></span>
+                        <span id="partnerEquipment"></span>
                     </p>
                     <p>
-                        Год: <span id="partnerYear"></span>
+                        <span id="partnerYear"></span>
                     </p>
                     <i class="close fas fa-times"></i>
                 </div>
@@ -606,7 +615,7 @@
                 </ul>
             </div>
             <div class="page-footer-col text-right">
-                <div class="page-footer__info">
+                <div class="page-footer__info mb-20">
                     <p>
                         info@loggers.ru
                     </p>
@@ -620,13 +629,6 @@
                         ИНН: 5904214284
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="row align-items-end">
-            <div class="page-footer-col policy">
-                <a href="" class="dashed">Политика конфиденциальности</a>
-            </div>
-            <div class="page-footer-col tablet-hidden">
                 <ul class="page-footer__nav">
                     <li>
                         <a href="">
@@ -635,6 +637,12 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="page-footer-col policy">
+                <a href="" class="dashed">Политика конфиденциальности</a>
+            </div>
+            <div class="page-footer-col"></div>
             <div class="page-footer-col text-right">
                 <div class="development">
                     <p>
@@ -781,7 +789,7 @@ $(document).ready(function () {
     var $element = $('.partners');
     let counter = 0;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop() + $(window).height();
         var offset = $element.offset().top
 

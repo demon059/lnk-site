@@ -58,6 +58,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        width: 100%;
 
         @media (max-width: 767px) {
             flex-direction: column;
@@ -165,12 +166,17 @@
                         background: none;
                         margin-top: 10px;
                         margin-bottom: 10px;
+                        min-width: auto;
                     }
 
                     li {
                         white-space: nowrap;
                         margin-left: 0;
                         line-height: 20px;
+
+                        @media (max-width: 767px) {
+                            white-space: normal;
+                        }
 
                         &:hover, &.active {
                             position: relative;
@@ -262,7 +268,8 @@
             background-color: transparent;
             flex: 1 auto;
             outline: none;
-            text-align: center;
+            text-align: left;
+            padding: 0 10px;
             font-family: 'Roboto', sans-serif;
             font-style: italic;
 

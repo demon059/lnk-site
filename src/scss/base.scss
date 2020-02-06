@@ -9,6 +9,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
     overflow-x: hidden;
+    padding-top: 165px;
 
     @media (max-width: 767px) {
         padding-top: 77px;
@@ -300,6 +301,13 @@ a {
 .mobile-hidden {
     @media (max-width: 767px) {
         display: none;
+    }
+}
+
+.mobile-visible {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
     }
 }
 

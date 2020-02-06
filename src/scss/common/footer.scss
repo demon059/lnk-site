@@ -64,8 +64,6 @@
             font-size: 18px;
         }
         p + p {
-            margin-top: 10px;
-
             @media (max-width: 767px) {
                 margin-top: 0;
             }
@@ -85,10 +83,9 @@
             }
 
             ul {
-                list-style: none;
                 margin: 0;
                 padding: 0;
-                padding-left: 10px;
+                padding-left: 20px;
 
                 a {
                     text-transform: none;
