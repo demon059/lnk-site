@@ -422,7 +422,8 @@
             <h2 class="common-title-h2">
                 География поставок
             </h2>
-            <div class="geo-deliveries text-center" id="russian-map">
+            <div class="geo-deliveries text-center">
+                <img src="build/img/map.png" class="geo-deliveries__map" alt="">
                 <div class="point-region" id="krasnoyarsk">
                     <i class="fas fa-map-marker-alt"></i>
                     <div class="point-region__popup">
@@ -669,42 +670,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="build/js/libs/tags-cloud/jqcloud.min.js"></script>
+<script src="build/js/scripts/scripts.js"></script>
 <script>
 $(document).ready(function () {
-    // карта поставок --------------------------------------------------
-    fetch('build/js/libs/map/with-regions.json').then(function (response) {
-        response.json().then(function (data) {
-            new RussianMap({
-                viewPort: data.viewPort,
-                mapId: 'russian-map',
-                width: 862,
-                height: 497,
-                // дефолтовые атрибуты для контуров регионов
-                defaultAttr: {
-                    fill: '#25669e', // цвет которым закрашивать
-                    stroke: '#ffffff', // цвет границы
-                    'stroke-width': 1, // ширина границы
-                    'stroke-linejoin': 'round' // скруглять углы
-                },
-
-                // hover
-                mouseMoveAttr: {
-                    fill: '#25669e'
-                }
-                // onMouseMove: function (event) {
-                //     console.log('mouse on ' + this.region.name + ' (ident: ' + this.region.ident + ')');
-                // },
-                // onMouseOut: function (event) {
-                //     console.log('out on ' + this.region.name + ' (ident: ' + this.region.ident + ')');
-                // },
-                // onMouseClick: function (event) {
-                //     console.log('clicked on ' + this.region.name);
-                // }
-            }, data.regions);
-        });
-    });
-    // --- //
-
     // партнеры --------------------------------------------------
     var words = [
         {
@@ -812,6 +780,5 @@ $(document).ready(function () {
     // --- //
 })
 </script>
-<script src="build/js/scripts/scripts.js"></script>
 </body>
 </html>
