@@ -1,4 +1,8 @@
 .tabs {
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
+
     @media (max-width: 767px) {
         display: none;
     }
@@ -166,7 +170,7 @@
 
 .tabs-mobile {
     display: none;
-    margin-top: 20px;
+    margin-top: 30px;
 
     @media (max-width: 767px) {
         display: block;

@@ -374,3 +374,9 @@ a {
         }
     }
 }
+
+.action-download-card {
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
